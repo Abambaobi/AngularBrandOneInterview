@@ -1,0 +1,54 @@
+<div class="navigationBar">
+  <!-- ALL POST -->
+  <button class="allPostBotton" (click)="fetchAllPost()">Click here to see all Post</button>
+  
+  <!-- ADD POST -->
+  <button class="addPostBotton" (click)="addPostForm()">Click here to add Post</button>
+  
+  <!-- SINGLE POST -->
+  <div class="singlePost">
+  <div class="enterSinglePostId">Enter post ID to get a single post:</div>
+  <input class="inputBar" [(ngModel)]="singlePostId" type="number" name="singlePostId" />
+  <button class="singlePostBotton" (click)="fetchSinglePost()">
+    Get single Post
+  </button>
+  </div>
+
+  <!-- UPDATE POST -->
+  <div class="updatePost">
+    <div class="enterUpdatePostId">Enter post ID to update a post:</div>
+    <input class="inputBar" [(ngModel)]="updatePostId" type="number" name="updatePostId" />
+    <button class="updatePostBotton" (click)="updatePostForm()">
+      Update Post
+    </button>
+  </div>
+  
+  <!-- DELETE POST -->
+  <div class="deletePost">
+    <div class="enterDeletePostId">Enter post ID to delete a single post:</div>
+    <input class="inputBar" [(ngModel)]="deletePostId" type="number" name="" id="" />
+    <button class="deletePostBotton" (click)="deletePost()">
+      Delete Post
+    </button>
+  </div>
+  </div>
+
+<div class="Loading" *ngIf="showLoading">Loading...</div>
+
+<div class="Error" *ngIf="showError">{{errorMessage}}</div>
+
+<app-added-post *ngIf="showAddedPost" [post]="addedPost"></app-added-post>
+
+<app-add-post-form (emmitPost)="handleEmmitedData($event)" *ngIf="showAddPostForm"></app-add-post-form>
+
+<app-add-all-post *ngIf="showAllPost" [posts]="posts"></app-add-all-post>
+
+<app-single-post *ngIf = "showSinglePost" [post]="returnedSinglePost"></app-single-post>
+
+<app-delete-post *ngIf = "showDeletedPost" [post] = "returnedDeletedPost"></app-delete-post>
+
+<app-update-post-form *ngIf = "showUpdatePostForm" (emitUpdatedPost)="updatePost($event)"></app-update-post-form>
+
+<app-updated-post *ngIf="showUpdatedPost" [post] = "updatedPost"></app-updated-post>
+
+

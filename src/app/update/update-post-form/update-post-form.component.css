@@ -1,0 +1,62 @@
+.updatePostFormContainer {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  .post-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .addPostFormContainer {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-control {
+      font-size: 14px;
+    }
+  
+    .btn {
+      font-size: 16px;
+    }
+  }
+  

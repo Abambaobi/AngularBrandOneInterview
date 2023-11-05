@@ -1,0 +1,23 @@
+
+            
+            <!-- ALL POST DATA -->
+            <div>
+            <div class="post-container" *ngFor="let post of posts" >
+              <h1 class="post-title">{{post.title}}</h1>
+              <p class="post-body">{{post.body}}</p>
+              <div class="post-info">
+                <strong class="reaction">Reactions:</strong> {{post.reactions}}
+              </div>
+              <div class="post-info">
+                <strong class="tags">Tags:</strong>
+                <ul class="tag-list">
+                  <li class="tag">{{post.tags[0]}}</li>
+                  <li class="tag">{{post.tags[1]}}</li>
+                  <li class="tag">{{post.tags[2]}}</li>
+                </ul>
+              </div>
+              <div class="post-info">
+                <strong class="userId">User ID:</strong> {{post.userId}}
+              </div>
+            </div>
+           </div>

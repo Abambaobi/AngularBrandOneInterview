@@ -1,0 +1,90 @@
+/* NAVIGATION BAR STYLE STARTS HERE */
+
+  /* Default styles for navigation bar */
+.navigationBar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #3498db;
+    padding: 10px;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #2ecc71;
+  }
+  
+  /* Input styles */
+  .inputBar {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .navigationBar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+ 
+/* LOADING AND ERROR MESSAGE STYLES ENDS HERE*/
+.Loading, .Error{
+  width: 50vw;
+  height: 50vh;
+  background-color: #f9f9f9;
+  margin: 10vh auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  line-height: 50vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: #007bff; 
+}
+
+/* LOADING AND ERROR MESSAGE STYLES ENDS HERE*/
+  
+  /* Tablet styles (example) */
+  @media (max-width: 1024px) {
+    .navigationBar {
+      justify-content: center;
+    }
+    .Error{
+      font-size: medium;
+      width: unset;
+      margin: 10vh auto;
+      padding: unset;
+    }
+  }
+  
+  /* Mobile styles (example) */
+  @media (max-width: 480px) {
+    .Error{
+      font-size: small;
+      width: unset;
+      margin: 10vh auto;
+      padding: unset;
+    }
+    .navigationBar{
+      display: block;
+    }
+    .inputBar {
+      width: 100%;
+    }
+  }
+/* NAVIGATION BAR STYLE ENDS HERE */
+
+

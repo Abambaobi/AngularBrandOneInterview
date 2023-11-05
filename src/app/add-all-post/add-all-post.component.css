@@ -1,0 +1,73 @@
+/* ALL POST DATA STYLES STARTS HERE */
+
+/* Post container styles */
+.post-container {
+    background-color: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Post title styles */
+  .post-title {
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Post body styles */
+  .post-body {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* Post info styles */
+  .post-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Reactions styles */
+  .reaction {
+    color: #e74c3c;
+  }
+  
+  /* Tags styles */
+  .tags {
+    color: #27ae60;
+  }
+  
+  /* Tag list styles */
+  .tag-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Tag styles */
+  .tag {
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  
+  /* User ID styles */
+  .userId {
+    color: #f39c12;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .post-container {
+      margin: 10px 0;
+    }
+    .tag {
+      margin-bottom: 5px;
+    }
+  }
+  
+
+/* ALL POST DATA STYLES ENDS HERE */
